@@ -40,7 +40,7 @@ pipeline{
                 sh "trivy fs . > trivyfs.txt"
             }
         }
-        stage('Excutable permission to userdata'){
+        stage('Executable permission to userdata'){
             steps{
                 sh 'chmod 777 website.sh'
             }
